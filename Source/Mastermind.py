@@ -283,7 +283,7 @@ def encadre_tableau_texte(tab:list, bord:int = 1) -> list :
     for i in range(len(tab) + 2 * bord) :
         if (i > bord and i < (len(tab) - bord)) :
             if (i > bord * 2 and i < (len(tab) - bord * 2)) :
-                print(f"*" * bord "0" * bord "{}" " " * bord "*" * bord)
+                print("*" * bord, "0" * bord, tab[i], " " * bord, "*" * bord)
 
     for i in range(bord * 2 * len(tab)) :
         print("*" * (maxWordLen + 2 * bord))

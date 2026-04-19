@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <!-- Full hue spectrum: R → Y → G → C → B → M → R -->
+    <linearGradient id="hueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"      stop-color="#ff0000"/>
+      <stop offset="16.667%" stop-color="#ffff00"/>
+      <stop offset="33.333%" stop-color="#00ff00"/>
+      <stop offset="50%"     stop-color="#00ffff"/>
+      <stop offset="66.667%" stop-color="#0000ff"/>
+      <stop offset="83.333%" stop-color="#ff00ff"/>
+      <stop offset="100%"    stop-color="#ff0000"/>
+    </linearGradient>
+    <!-- Saturation: white (left) → transparent (right) -->
+    <linearGradient id="satGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Value/Brightness: transparent (top) → black (bottom) -->
+    <linearGradient id="valGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Hue base layer -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#hueGradient)"/>
+  <!-- 2. White-to-transparent saturation overlay -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#satGradient)"/>
+  <!-- 3. Transparent-to-black value overlay -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#valGradient)"/>
+</svg>

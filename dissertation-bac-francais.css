@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f3efe7;
+  color: #2d241f;
+  line-height: 1.7;
+}
+
+.page {
+  width: min(980px, calc(100% - 32px));
+  margin: 32px auto 48px;
+}
+
+.hero,
+.card {
+  background: #fffdf9;
+  border: 1px solid #d7cbbb;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(69, 48, 29, 0.08);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.niveau {
+  margin: 0 0 8px;
+  color: #8b5d33;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: #4b2d15;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.65rem;
+  border-bottom: 2px solid #eadfce;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+}
+
+.subject {
+  margin-bottom: 0;
+  font-size: 1.02rem;
+}
+
+.plan-block + .plan-block {
+  margin-top: 18px;
+}
+
+ul {
+  margin: 10px 0 0 20px;
+  padding: 0;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+p {
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 18px, 980px);
+    margin: 18px auto 32px;
+  }
+
+  .hero,
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
